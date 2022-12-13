@@ -10,16 +10,6 @@ pipeline{
                 '''
             }
         }
-        
-        stage("Install Git"){
-            steps{
-                sh '''
-                sudo yum install git -y
-                '''
-            }
-        }
-        
-        
         stage("Download From GitHub"){
             steps{
                 sh '''
